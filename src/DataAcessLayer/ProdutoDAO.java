@@ -22,7 +22,7 @@
 /*     */   
 /*     */   public ProdutoDAO() {
 /*     */     try {
-/*  25 */       conexao conexao = new conexao("localhost", "3306", "mydb", "root", "");
+/*  25 */       conexao conexao = new conexao("172.18.0.2", "3306", "mydb", "root", "password");
 /*  26 */       this.connect = conexao.getConnection();
 /*     */     }
 /*  28 */     catch (SQLException e) {
