@@ -22,7 +22,7 @@
 /*    */   
 /*    */   public VendaDao() {
 /*    */     try {
-/* 25 */       conexao conexao = new conexao("172.18.0.2", "3306", "mydb", "root", "password");
+/* 25 */       conexao conexao = new conexao("localhost", "3306", "mydb", "root", "123456789");
 /* 26 */       this.connect = conexao.getConnection();
 /*    */     }
 /* 28 */     catch (SQLException e) {

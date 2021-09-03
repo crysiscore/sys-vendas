@@ -198,6 +198,7 @@ import org.netbeans.lib.awtextra.AbsoluteLayout;
 /*     */     }
 /* 201 */     catch (Exception ex) {
 /* 202 */       System.out.println("" + ex + ex.getLocalizedMessage());
+                System.out.println("" + ex.toString());
 /*     */     } 
 /*     */   }
 /*     */ 
