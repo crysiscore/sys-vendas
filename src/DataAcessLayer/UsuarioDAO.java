@@ -19,14 +19,15 @@
 /*     */   
 /*     */   public UsuarioDAO() {
 /*     */     try {
-/*  22 */       conexao conexao = new conexao("172.18.0.2", "3306", "mydb", "root", "password");
+/*  22 */       conexao conexao = new conexao("localhost", "3306", "mydb", "root", "123456789");
 /*  23 */       this.connect = conexao.getConnection();
 /*     */     }
 /*  25 */     catch (SQLException e) {
 /*     */ 
-/*     */     
+/*     */      System.out.println("Erro ao conectar a DB:" + e.toString());
 /*     */     }
-/*  29 */     catch (ClassNotFoundException e) {}
+/*  29 */     catch (ClassNotFoundException e) {
+                System.out.println("Erro ao conectar a DB:" + e.toString());}
 /*     */   }
 /*     */ 
 /*     */ 
